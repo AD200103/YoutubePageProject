@@ -181,6 +181,23 @@ a {
   align-items: center;
   justify-content: center;
 }
+aside {
+  height: 667px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding-left: 24px;
+  margin-left: -20px;
+  gap: 0px;
+  width: fit-content;
+  overflow: scroll;
+  overflow-x: visible;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+  /* justify-content: space-between; */
+}
+aside:hover {
+  scrollbar-color: gray transparent;
+}
 .firstsection {
   width: 200px;
   display: flex;
@@ -197,6 +214,32 @@ a {
   gap: 0px;
   margin-left: 0;
 }
+.thirdsection {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 0px;
+  margin-left: 0;
+}
+aside .thirdsection h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgb(241, 241, 241);
+  font-size: 1rem;
+  margin-top: 7px;
+  margin-left: -2px;
+  margin-bottom: 6px;
+}
+.yt-img-shadow {
+  border-radius: 50%;
+  margin-right: 24px;
+}
+#img {
+  height: 24px;
+  width: 24px;
+}
+
 aside .secondsection button .Ju {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -208,18 +251,17 @@ aside .secondsection button .Ju {
 main {
   display: flex;
 }
-aside {
-  display: flex;
-  flex-direction: column;
-  margin-left: 4px;
-  gap: 0px;
-  width: fit-content;
-}
 .border {
   width: 216px;
   height: 0.8px;
   background-color: rgba(255, 255, 255, 0.2);
   margin-left: -2px;
+}
+.border2 {
+  width: 236px;
+  height: 0.8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: -20px;
 }
 .asidebox {
   background-color: #181818;
@@ -246,7 +288,7 @@ aside {
 aside a {
   text-decoration: none;
 }
-.asideboxbtn > .gsst_e {
+.asideboxbtn .gsst_e {
   margin-right: 24px;
 }
 .asideboxbtn:hover {
@@ -254,6 +296,7 @@ aside a {
   width: 204px;
   height: 40px;
   border-radius: 10px;
+  cursor: pointer;
 }
 .asideboxbtn:active {
   background-color: #5c5959;
@@ -264,4 +307,7 @@ aside a {
   width: 204px;
   height: 40px;
   border-radius: 10px;
+}
+.AsideAndMainWrapper {
+  display: flex;
 }
