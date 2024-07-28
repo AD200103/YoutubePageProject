@@ -278,12 +278,19 @@ main {
   height: 40px;
   padding-left: 12px;
   padding-right: 12px;
+  text-wrap: nowrap;
   display: flex;
   align-items: center;
   color: white;
   font-size: 0.875rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+.thirdsection a:last-child .Apolog {
+  width: 115px;
+  text-overflow: ellipsis; /* enables ellipsis */
+  white-space: nowrap; /* keeps the text in a single line */
+  overflow: hidden; /* keeps the element from overflowing its parent */
 }
 aside a {
   text-decoration: none;
