@@ -27,26 +27,40 @@ header {
   align-items: center;
   background-color: #181818;
   width: fit-content;
-  height: 40px;
-  border: 1px solid #3d3d3d;
-  border-radius: 40px 40px 40px 40px;
+  height: fit-content;
   overflow: hidden;
+  border: none;
 }
-.blackbo {
-  width: 576px;
-  height: 100%;
-  display: flex;
-  padding-left: 20px;
-  color: #aaaaaa;
-  align-items: center;
-  justify-content: space-between;
-  cursor: text;
+.blackbo:active {
+  border: 1px solid #820000;
+}
+.blackbo:focus {
+  border: 1px solid #820000;
 }
 .centerstuff .gsst_e {
   display: flex;
   align-items: center;
 }
 
+.serch {
+  all: unset;
+  border-radius: 40px 0px 0px 40px;
+  border: 1px solid #3d3d3d;
+  width: 576px;
+  height: 40px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: text;
+  width: 482px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.serch:focus {
+  border-color: #065fd4;
+}
 .keyb {
   height: 100%;
   width: 50px;
@@ -54,9 +68,11 @@ header {
 }
 .greybo {
   background-color: #212121;
-  border-left: 1px solid #3d3d3d;
+  border: 1px solid #3d3d3d;
+  border-radius: 0px 40px 40px 0px;
+  border-left: none;
   width: 11%;
-  height: 100%;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,6 +162,7 @@ header {
   background-color: #181818;
   border: none;
 }
+
 header .youtubelogowrap .arrowbtn {
   margin-bottom: 5px;
 }
@@ -222,7 +239,24 @@ aside:hover {
   gap: 0px;
   margin-left: 0;
 }
+.fourthsection {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 0px;
+  margin-left: 0;
+}
 aside .thirdsection h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgb(241, 241, 241);
+  font-size: 1rem;
+  margin-top: 7px;
+  margin-left: -2px;
+  margin-bottom: 6px;
+}
+aside .fourthsection h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: rgb(241, 241, 241);
@@ -286,12 +320,24 @@ main {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-.thirdsection a:last-child .Apolog {
+.thirdsection a:nth-child(7) .Apolog {
   width: 115px;
   text-overflow: ellipsis; /* enables ellipsis */
   white-space: nowrap; /* keeps the text in a single line */
   overflow: hidden; /* keeps the element from overflowing its parent */
 }
+/* .thirdsection a:nth-child(8) .asideboxbtn {
+  overflow: hidden;
+}
+.thirdsection a:nth-child(8) .asideboxbtn:active {
+  height: 100px;
+  transition-delay: 0ms;
+}
+.thirdsection a:nth-child(8) .asideboxbtn:focus {
+  height: 100px;
+  font-size: 0;
+  background-color: #181818;
+} */
 aside a {
   text-decoration: none;
 }
